@@ -1,0 +1,152 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    color: white;
+    background: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sedans, .suvs, .luxury {
+    height: 27.6em;
+    width: 20.438em;
+}
+
+#contenu {
+    position: relative;
+    height: 24em;
+    margin: 15%;
+}
+
+img {
+    height: auto;
+    width: 4em;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+p {
+    font-size: 0.938em;
+    font-weight: 200;
+    line-height: 1.7em;
+    opacity: 0.7;
+}
+
+#bouton a {
+    position: absolute;
+    margin-top: 5%;
+    font-size: 0.938em;
+    text-decoration: none;
+    opacity: 0.9;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 13px 30px;
+    width: auto;
+    background: white;
+}
+
+.sedans {
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+.sedans a {
+    color: hsl(31, 77%, 52%);
+}
+.sedans #bouton a:hover {
+    background: hsl(31, 77%, 52%);
+    color: white;
+}
+
+.suvs {
+    background: hsl(184, 100%, 22%);
+}
+.suvs a {
+    color: hsl(184, 100%, 22%);
+}
+.suvs #bouton a:hover {
+    background: hsl(184, 100%, 22%);
+    color: white;
+}
+
+.luxury {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px ;
+}
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+.luxury #bouton a:hover {
+    background: hsl(179, 100%, 13%);
+    color: white;
+}
+
+.attribution {
+    margin-bottom: 10px;
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+.attribution a {
+   text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 950px) {
+    body {
+        display: grid;
+        place-items: center;
+    }
+
+    .bg {
+        flex-direction: row;
+    }
+
+    #contenu {
+        margin: 15.2% 15.8%;
+    }
+
+    h1 {
+        margin: 15% 0 12%;
+    }
+
+    .sedans, .suvs, .luxury {
+        height: 31.2em;
+        width: 19.18em;
+    }
+
+    .sedans {
+        margin-top: 0;
+        border-radius: 10px 0 0 10px;
+    }
+    .luxury {
+        border-radius: 0 10px 10px 0;
+    }
+
+    #bouton {
+        margin-top: 32%;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 10px;
+        font-size: 0.7em;
+    }
+    .attribution a {
+       text-decoration: none;
+    }
+}
